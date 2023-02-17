@@ -4,8 +4,8 @@
 import vrmapi
 def vrmevent_2(obj,ev,param):
     if ev == 'init':
-    	obj.Turn()
-    	obj.SetEventAfter(8.0)
+    	obj.Turn()#列車の運行方向を反転させる
+    	obj.SetEventAfter(8.0)#8秒後にafterのイベントを実行
     elif ev == 'broadcast':
         dummy = 1
     elif ev == 'timer':
@@ -13,7 +13,7 @@ def vrmevent_2(obj,ev,param):
     elif ev == 'time':
         dummy = 1
     elif ev == 'after':
-    	obj.AutoSpeedCTRL(123, 0.0632)
+    	obj.AutoSpeedCTRL(123, 0.0632)#123mmで最高時速の6.32%の速度になる
     elif ev == 'frame':
         dummy = 1
     elif ev == 'couple':
