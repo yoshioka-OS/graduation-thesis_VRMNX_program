@@ -1,0 +1,18 @@
+#OBJID=78(与えられた番号によって変動)
+import vrmapi
+def vrmevent_78(obj,ev,param):
+    if ev == 'init':
+        dummy = 1
+    elif ev == 'broadcast':
+        dummy = 1
+    elif ev == 'timer':
+        dummy = 1
+    elif ev == 'time':
+        dummy = 1
+    elif ev == 'after':
+        dummy = 1
+    elif ev == 'frame':
+        dummy = 1
+    elif ev == 'catch':
+        tr = obj.GetTrain()#列車の情報を変数に入れる
+        tr.AutoSpeedCTRL(52, 0.105)#列車を52mmで最高時速の10.5％の速度にする
