@@ -1,0 +1,46 @@
+#VRMNX_編成配置のプログラム
+#東京交通短期大学_221096_吉岡柊真
+#OBJID=2
+import vrmapi
+def vrmevent_2(obj,ev,param):
+    if ev == 'init':
+    	obj.Turn()
+    	obj.SetEventAfter(8.0)
+    elif ev == 'broadcast':
+        dummy = 1
+    elif ev == 'timer':
+        dummy = 1
+    elif ev == 'time':
+        dummy = 1
+    elif ev == 'after':
+    	obj.AutoSpeedCTRL(123, 0.0632)
+    elif ev == 'frame':
+        dummy = 1
+    elif ev == 'couple':
+        dummy = 1
+    elif ev == 'split':
+        dummy = 1
+    elif ev == 'start':
+        dummy = 1
+    elif ev == 'stop':
+        dummy = 1
+    elif ev == 'autospeed':
+        dummy = 1
+    elif ev == 'delete':
+        dummy = 1
+    elif ev == 'create':
+        dummy = 1
+    elif ev == 'homekey':
+        dummy = 1
+    elif ev == 'endkey':
+        dummy = 1
+    elif ev == 'insertkey':
+        dummy = 1
+    elif ev == 'spacekey':
+        dummy = 1
+    elif ev == 'active':
+        dummy = 1
+    elif ev == 'view':
+        dummy = 1
+    elif ev == 'keydown':
+        dummy = 1
